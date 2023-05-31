@@ -19,6 +19,7 @@ eggs/
 # Virtual environment
 venv/
 ENV/
+env/
 
 # IDE-specific files
 .idea/
