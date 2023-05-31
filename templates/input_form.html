@@ -7,37 +7,62 @@
     <title>Input | Non Recursive Predective Parser</title>
     <script src="https://cdn.tailwindcss.com"></script>
   </head>
-  <body class="flex items-center justify-center h-screen bg-gray-100">
-    <div class="text-center">
-      <h1 class="text-4xl font-bold mb-4">Non Recursive Predective Parser</h1>
-      <p class="text-gray-500 text-lg mb-4">
-        Author: <a href="mailto:official@aayushpokharel.com">Aayush Pokharel</a>
-      </p>
-      <form method="POST" action="/">
-        <div class="mb-4">
-          <label class="block text-xl font-bold mb-2">Input String</label>
-          <input
-            class="shadow appearance-none border rounded w-1/2 py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
-            type="text"
-            name="input_string"
-            placeholder="Enter the input string"
-            required
-          />
+  <body class="flex flex-col flex-1 bg-gray-100 min-h-screen">
+    <div class="flex items-center justify-center h-[96vh]">
+      <div class="text-center">
+        <h1 class="text-4xl font-bold mb-4">Non Recursive Predective Parser</h1>
+        <p class="text-gray-500 text-lg mb-4">
+          Author:
+          <a href="mailto:official@aayushpokharel.com">Aayush Pokharel</a>
+        </p>
+        <form method="POST" action="/">
+          <div class="mb-4">
+            <label class="block text-xl font-bold mb-2">Input String</label>
+            <input
+              class="shadow appearance-none border rounded w-1/2 py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+              type="text"
+              name="input_string"
+              placeholder="Enter the input string"
+              required
+            />
+          </div>
+          <button
+            class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline"
+            type="submit"
+          >
+            Parse
+          </button>
+        </form>
+        <div class="mt-8">
+          <h2 class="text-2xl font-bold mb-2">Team Members</h2>
+          <ul class="text-gray-500">
+            <li>Dikshya Poudel (Roll no. 45)</li>
+            <li>Dikshya Poudel (Roll no. 45)</li>
+          </ul>
         </div>
-        <button
-          class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline"
-          type="submit"
-        >
-          Parse
-        </button>
-      </form>
-      <div class="mt-8">
-        <h2 class="text-2xl font-bold mb-2">Team Members</h2>
-        <ul class="text-gray-500">
-          <li>Dikshya Poudel (Roll no. 45)</li>
-          <li>Dikshya Poudel (Roll no. 45)</li>
-        </ul>
       </div>
     </div>
+    <footer
+      class="bg-gray-200 p-2 flex justify-between items-center sticky bottom-0"
+    >
+      <p class="text-gray-500 text-sm">
+        &copy; 2023 Aayush Pokharel. All rights reserved.
+      </p>
+      <p class="text-gray-500 text-sm">
+        <a
+          href="https://github.com/AayushPokharel/CompilerParser"
+          class="text-blue-500"
+          >View on GitHub</a
+        >
+      </p>
+      <p class="text-gray-500 text-sm">
+        This project is licensed under the
+        <a
+          href="https://github.com/AayushPokharel/CompilerParser/blob/main/LICENSE"
+          class="text-blue-500"
+          >MIT License</a
+        >.
+      </p>
+    </footer>
   </body>
 </html>
