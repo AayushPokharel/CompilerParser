@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Result | Non Recursive Predective Parser</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body class="bg-gray-100">
+    <div class="flex flex-col items-center">
+      <h1 class="text-4xl font-bold mt-8">Non Recursive Predective Parser</h1>
+
+      <div class="flex justify-center mt-8">
+        <div class="w-1/2 mr-4">
+          <h2 class="text-2xl font-bold mb-4">First Sets</h2>
+          <table class="w-full border">
+            <thead>
+              <tr>
+                <th class="border bg-gray-200 px-4 py-2">Non-terminal</th>
+                <th class="border bg-gray-200 px-4 py-2">First Set</th>
+              </tr>
+            </thead>
+            <tbody>
+              {% for nt, first_set in first_sets.items() %}
+              <tr>
+                <td class="border px-4 py-2">{{ nt }}</td>
+                <td class="border px-4 py-2">{{ ', '.join(first_set) }}</td>
+              </tr>
+              {% endfor %}
+            </tbody>
+          </table>
+        </div>
+
+        <div class="w-1/2 ml-4">
+          <h2 class="text-2xl font-bold mb-4">Follow Sets</h2>
+          <table class="w-full border">
+            <thead>
+              <tr>
+                <th class="border bg-gray-200 px-4 py-2">Non-terminal</th>
+                <th class="border bg-gray-200 px-4 py-2">Follow Set</th>
+              </tr>
+            </thead>
+            <tbody>
+              {% for nt, follow_set in follow_sets.items() %}
+              <tr>
+                <td class="border px-4 py-2">{{ nt }}</td>
+                <td class="border px-4 py-2">{{ ', '.join(follow_set) }}</td>
+              </tr>
+              {% endfor %}
+            </tbody>
+          </table>
+        </div>
+      </div>
+
+      <div class="mt-8">
+        <h2 class="text-2xl font-bold mb-4">Result</h2>
+        <div class="w-1/2">
+          <div
+            class="{% if result == 'Accepted' %}bg-green-200{% elif result == 'Rejected' %}bg-red-200{% else %}bg-orange-200{% endif %} px-4 py-2 rounded"
+          >
+            {{ result }}
+          </div>
+        </div>
+      </div>
+
+      <div class="mt-8">
+        <a
+          href="/"
+          class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded"
+        >
+          Go Back
+        </a>
+      </div>
+    </div>
+  </body>
+</html>

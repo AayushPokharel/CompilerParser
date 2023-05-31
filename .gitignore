@@ -1,0 +1,39 @@
+# Byte-compiled / optimized Python files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# C extensions
+*.so
+
+# Distribution / packaging
+dist/
+build/
+eggs/
+*.egg-info/
+.wsgi/
+
+# Server logs
+*.log
+
+# Virtual environment
+venv/
+ENV/
+
+# IDE-specific files
+.idea/
+.vscode/
+
+# Flask specific
+instance/
+.webassets-cache
+
+# Environment variables
+.env
+
+# Compiled files
+*.pyc
+
+# Miscellaneous
+.DS_Store
+Thumbs.db
